@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import * as React from "react";
 import './App.css';
 import {useState, useEffect} from "react";
-import NavBar from './components/NavBar';
 import Nav from './components/Nav'
 import Home from './components/Home';
 import Footer from './components/Footer';
@@ -28,7 +27,6 @@ function App() {
        <ThemeProvider theme={appliedTheme} />
        
      <Nav />
-      <NavBar />
     <Routes>
     <Route
               index
