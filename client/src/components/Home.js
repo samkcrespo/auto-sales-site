@@ -1,8 +1,9 @@
 import React from 'react'
+import jdmLogo from '../images/jdmLogo.png';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div><img src={jdmLogo} alt="JDM Import House Logo"/></div>
   )
 }
 
