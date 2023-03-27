@@ -9,6 +9,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import theme from "./theme";
 import ProductsContainer from './components/ProductsContainer';
 import { Route, Routes } from "react-router-dom";
+import Contact from './components/Contact';
 
 function App() {
   const appliedTheme = createTheme(theme);
@@ -17,7 +18,7 @@ function App() {
 
   const URL = ('http://localhost:4000/products')
   useEffect(() => { 
-      fetch(URL)
+      fetch('http://localhost:4000/products')
       .then(r => r.json())
       .then(products => setProducts(products))         
   }, []);
@@ -38,6 +39,7 @@ function App() {
               }
             />
             <Route path="/products" element={<ProductsContainer />} />
+            <Route path="/contact" element={<Contact/>} />
      
       </Routes>
       <Footer />
