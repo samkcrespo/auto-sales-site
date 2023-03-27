@@ -18,7 +18,7 @@ function App() {
 
   const URL = ('http://localhost:4000/products')
   useEffect(() => { 
-      fetch('http://localhost:4000/products')
+      fetch(URL)
       .then(r => r.json())
       .then(products => setProducts(products))         
   }, []);
