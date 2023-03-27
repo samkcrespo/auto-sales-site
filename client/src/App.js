@@ -9,8 +9,8 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import theme from "./theme";
 import ProductsContainer from './components/ProductsContainer';
 import { Route, Routes } from "react-router-dom";
-import Contact from './components/Contact';
-
+import ContactForm from './components/ContactForm';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
   const appliedTheme = createTheme(theme);
   const [products, setProducts] = useState([]);
@@ -39,9 +39,11 @@ function App() {
               }
             />
             <Route path="/products" element={<ProductsContainer />} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/contact" element={<ContactForm/>} />
+           
      
       </Routes>
+      <ContactForm />
       <Footer />
     </div>
   );
