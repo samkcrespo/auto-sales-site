@@ -42,7 +42,7 @@ function Slideshow() {
     ]
 
     const productImages = products.map(product => {
-        return <div key={product.id} ><img onClick="" id={product.id} style={{width: "400px", height: "300px", margin: 0}} src={product.image} alt={product.title}/></div>
+        return <div key={product.id} ><img onClick="" id={product.id} style={{width: "450px", height: "400px", margin: 0}} src={product.image} alt={product.title}/></div>
     })
 
 
