@@ -44,8 +44,6 @@ function App() {
            
      
       </Routes>
-     
-      <ContactForm />
       <Footer />
     </div>
   );
