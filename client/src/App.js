@@ -38,7 +38,7 @@ function App() {
                 />
               }
             />
-            <Route path="/products" element={<ProductsContainer />} />
+            <Route path="/products" element={<ProductsContainer products={products}/>} />
             <Route path="/contact" element={<ContactForm/>} />
            
      
