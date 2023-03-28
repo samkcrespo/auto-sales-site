@@ -7,20 +7,27 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function ProductCart({product}) {
+  console.log({product})
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         alt={product.title}
         height="140"
-        image={product.image}
+        image={product.imageUrl}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {product.title}
+         {product.make} {product.model}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {product.description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {product.mileage} Miles
+        </Typography>
+        <Typography variant="h5" color="text.secondary">
+          ${product.price}
         </Typography>
       </CardContent>
       <CardActions>
