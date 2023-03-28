@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import { NavLink, useNavigate } from "react-router-dom";
 import theme from "../theme";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -18,22 +18,18 @@ const pages = ['Home','Products', 'About Us', 'Contact'];
 function ResponsiveAppBar() {
     const appliedTheme = createTheme(theme);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    console.log("clicked")
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -90,16 +86,26 @@ function ResponsiveAppBar() {
               }}
             >
                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/">
                   <Typography textAlign="center">Home</Typography>
+                  </NavLink>
                 </MenuItem>
                  <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/products">
                  <Typography textAlign="center">Products</Typography>
+                 </NavLink>
                </MenuItem>
+             
                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                <NavLink to="/about">
                 <Typography textAlign="center">About Us</Typography>
+                </NavLink>
+
               </MenuItem>
                <MenuItem key="" onClick={handleCloseNavMenu}>
+                <NavLink to="/contact">
                <Typography textAlign="center">Contact</Typography>
+               </NavLink>
              </MenuItem>
            
             </Menu>
@@ -125,34 +131,28 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             
           
-              <Button
-                key=""
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                Home
-              </Button>
-              <Button
-                key=""
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                Products
-              </Button>
-              <Button
-                key=""
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-               About Us
-              </Button>
-              <Button
-                key=""
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-               Contact
-              </Button>
+          <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/">
+                  <Typography textAlign="center">Home</Typography>
+                  </NavLink>
+                </MenuItem>
+                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/products">
+                 <Typography textAlign="center">Products</Typography>
+                 </NavLink>
+               </MenuItem>
+             
+                <MenuItem key="" onClick={handleCloseNavMenu}>
+                <NavLink to="/about">
+                <Typography textAlign="center">About Us</Typography>
+                </NavLink>
+
+              </MenuItem>
+               <MenuItem key="" onClick={handleCloseNavMenu}>
+                <NavLink to="/contact">
+               <Typography textAlign="center">Contact</Typography>
+               </NavLink>
+             </MenuItem>
        
           </Box>
 

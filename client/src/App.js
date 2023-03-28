@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+       <ProductsContainer />
        <ThemeProvider theme={appliedTheme} />
        
      <Nav />
@@ -43,6 +44,7 @@ function App() {
            
      
       </Routes>
+     
       <ContactForm />
       <Footer />
     </div>
