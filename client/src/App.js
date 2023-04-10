@@ -16,17 +16,16 @@ function App() {
   const [products, setProducts] = useState([]);
   
 
-  const URL = ('http://localhost:4000/products')
-  useEffect(() => { 
-      fetch(URL)
-      .then(r => r.json())
-      .then(products => setProducts(products))         
-  }, []);
-  console.log(products)
+  // const URL = ('http://localhost:4000/products')
+  // useEffect(() => { 
+  //     fetch(URL)
+  //     .then(r => r.json())
+  //     .then(products => setProducts(products))         
+  // }, []);
+  // console.log(products)
 
   return (
     <div className="App">
-       <ProductsContainer />
        <ThemeProvider theme={appliedTheme} />
        
      <Nav />
