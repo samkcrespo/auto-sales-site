@@ -11,7 +11,7 @@ function Footer() {
         <h3>Copyright © {year}</h3>
  
 
-          <ul className="footer-icons">
+          {/* <ul className="footer-icons">
           <li className="social-icons">
             <a
               href="mailto:TEST@gmail.com"
@@ -22,7 +22,7 @@ function Footer() {
               <BiEnvelope />
             </a>
           </li>
-        </ul>
+        </ul> */}
   
   </div>
   )
