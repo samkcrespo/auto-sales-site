@@ -7,7 +7,7 @@ function Footer() {
   return (
    <div>
         <h3>JDM Import House</h3>
-     <h4>Copyright © {year}</h3>
+     <h4>Copyright © {year}</h4>
   
   </div>
   )
