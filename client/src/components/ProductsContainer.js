@@ -4,7 +4,7 @@ import ProductCard from './ProductCard'
 function ProductsContainer({products}) {
   return (
     <div>
-      <h3>Available Vehicles</h3>
+      <h3>Available Inventory</h3>
         {products?.map((product) => {
         return <ProductCard key={product.id} product={product} />
         })}
