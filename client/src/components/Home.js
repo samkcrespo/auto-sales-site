@@ -1,11 +1,13 @@
 import React from 'react'
-import jdmLogo from '../images/jdmLogo.png';
+import jdmLogo from '../images/JdmLogoWhite.png';
 import Slideshow from './Slideshow';
+import transparentcars from "../images/transparentcars.png";
 
 
 function Home() {
   return (
-    <div><img src={jdmLogo} alt="JDM Import House Logo"/>
+    <div>
+    <img src={transparentcars} alt="JDM Import House Garage"/>
     <Slideshow />
     </div>
   )
