@@ -7,9 +7,11 @@ function Home() {
   return (
     <div>
     <div>
-      <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%' }}  />
+   <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%', position: 'absolute', top: 0, left: 0, zIndex: -1  }} />
       </div>
-    <Slideshow />
+        {/* <div style={{ position: 'relative', zIndex: 4 }}>   
+        <Slideshow />
+        </div> */}
     </div>
 
     
