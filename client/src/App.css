@@ -47,6 +47,19 @@ font-family: roboto;
 }
 
 
+/* NAV */
+.red-line {
+  border-bottom: 1px solid red;
+  border-width: 3px;
+}
+/* HOME PAGE */
+
+.home-header {
+  font-weight: 500;
+}
+.transparent-text {
+  color: rgba(255, 255, 255, 0.75);
+}
 
 /* FOOTER */
 

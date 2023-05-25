@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function ProductCart({product}) {
+export default function ProductCard({product}) {
 
   return (
     <Card sx={{ maxWidth: 345 }}>

@@ -30,12 +30,19 @@ function ResponsiveAppBar() {
     console.log("clicked")
   };
 
+  const linkStyles = {
+    textDecoration: "none",
+    color: "white",
+    fontSize: "40px",
+    fontWeight: "800px"
+  
+  };
 
 
   return (
     <Box sx={{ flexGrow: 1 }}>
     <ThemeProvider theme={appliedTheme}>
-    <AppBar position="static" style={{ boxShadow: 'none', backgroundColor: 'transparent', zIndex: 2 }}>
+    <AppBar position="static" style={{ boxShadow: 'none', backgroundColor: 'transparent', zIndex: 1, height: '120px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters color={'primary'}>
           
@@ -92,7 +99,9 @@ function ResponsiveAppBar() {
                   </NavLink>
                 </MenuItem>
                  <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/products" style={{ textDecoration: 'none' }}>
+                  <NavLink to="/products" style={{
+          textDecoration: 'none'
+        }}>
                  <Typography textAlign="center">Vehicles</Typography>
                  </NavLink>
                </MenuItem>
@@ -131,22 +140,30 @@ function ResponsiveAppBar() {
             
           
           <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                  <NavLink to="/" style={linkStyles} activeStyle={{
+          background: "red",
+        }}>
                   <Typography textAlign="center">Home</Typography>
                   </NavLink>
                 </MenuItem>
                  <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/products" style={{ textDecoration: 'none', color: 'white' }}>
+                  <NavLink to="/products" style={linkStyles} activeStyle={{
+          background: "red",
+        }}>
                  <Typography textAlign="center">Vehicles</Typography>
                  </NavLink>
                </MenuItem>
                <MenuItem key="" onClick={handleCloseNavMenu}>
-                <NavLink to="/about" style={{ textDecoration: 'none', color: 'white' }}>
+                <NavLink to="/about" style={linkStyles} activeStyle={{
+          background: "red",
+        }}>
                 <Typography textAlign="center">About Us</Typography>
                 </NavLink>
                 </MenuItem>
              <MenuItem key="" onClick={handleCloseNavMenu}>
-                <NavLink to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+                <NavLink to="/contact" style={linkStyles} activeStyle={{
+          background: "red",
+        }}>
                <Typography textAlign="center">Contact Us</Typography>
                </NavLink>
              </MenuItem>
@@ -158,6 +175,7 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     </ThemeProvider>
+    <div class="red-line" style={{width: '900px', paddingLeft: '500px'}}></div>
     </Box>
   );
 }
