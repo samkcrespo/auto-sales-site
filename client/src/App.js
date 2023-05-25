@@ -5,6 +5,7 @@ import {useState, useEffect} from "react";
 import Nav from './components/Nav'
 import Home from './components/Home';
 import Footer from './components/Footer';
+import About from './components/About';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import theme from "./theme";
 import ProductsContainer from './components/ProductsContainer';
@@ -38,6 +39,7 @@ function App() {
                 />
               }
             />
+            <Route path="/about" element={<About/>} />
             <Route path="/products" element={<ProductsContainer products={products}/>} />
             <Route path="/contact" element={<ContactForm/>} />
            

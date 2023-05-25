@@ -91,16 +91,16 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">Home</Typography>
                   </NavLink>
                 </MenuItem>
-                <MenuItem key="" onClick={handleCloseNavMenu}>
+                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/products" style={{ textDecoration: 'none' }}>
+                 <Typography textAlign="center">Vehicles</Typography>
+                 </NavLink>
+               </MenuItem>
+               <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink to="/about" style={{ textDecoration: 'none'  }}>
                 <Typography textAlign="center">About Us</Typography>
                 </NavLink>
                 </MenuItem>
-                 <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/products" style={{ textDecoration: 'none' }}>
-                 <Typography textAlign="center">Inventory</Typography>
-                 </NavLink>
-               </MenuItem>
               <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink to="/contact" style={{ textDecoration: 'none'}}>
                <Typography textAlign="center">Contact Us</Typography>
@@ -135,16 +135,16 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">Home</Typography>
                   </NavLink>
                 </MenuItem>
-                <MenuItem key="" onClick={handleCloseNavMenu}>
+                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                  <NavLink to="/products" style={{ textDecoration: 'none', color: 'white' }}>
+                 <Typography textAlign="center">Vehicles</Typography>
+                 </NavLink>
+               </MenuItem>
+               <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink to="/about" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography textAlign="center">About Us</Typography>
                 </NavLink>
                 </MenuItem>
-                 <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/products" style={{ textDecoration: 'none', color: 'white' }}>
-                 <Typography textAlign="center">Inventory</Typography>
-                 </NavLink>
-               </MenuItem>
              <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
                <Typography textAlign="center">Contact Us</Typography>

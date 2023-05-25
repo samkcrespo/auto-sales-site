@@ -5,11 +5,12 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-   <div>
-        <h3>JDM Import House</h3>
-     <h4>Copyright © {year}</h4>
-  
-  </div>
+ 
+
+<div className="footer">
+<p> JDM Import House
+     Copyright © {year}</p>
+</div>
   )
 }
 
