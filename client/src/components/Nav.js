@@ -33,7 +33,8 @@ function ResponsiveAppBar() {
   const linkStyles = {
     textDecoration: "none",
     color: "white",
-    fontSize: "18px"
+    fontSize: "18px",
+    fontFamily: 'archivo'
   
   };
 
@@ -41,7 +42,7 @@ function ResponsiveAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
     <ThemeProvider theme={appliedTheme}>
-    <AppBar position="static" style={{ boxShadow: 'none', backgroundColor: 'transparent', zIndex: 1, height: '120px' }}>
+    <AppBar position="static" style={{ boxShadow: 'none', backgroundColor: 'transparent', zIndex: 1, height: '110px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters color={'primary'}>
           
@@ -61,7 +62,7 @@ function ResponsiveAppBar() {
             }}
           >
           </Typography>
-          <img src={jdmLogo} style={{height: '150px'}}/>
+          <img src={jdmLogo} style={{height: '200px'}}/>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -133,7 +134,6 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-           JDM
           </Typography>
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             
@@ -166,7 +166,10 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     </ThemeProvider>
+    <div class="about-container">
+    <div ></div>
     <div class="red-line" style={{width: '90%', paddingLeft: '700px'}}></div>
+    </div>
     </Box>
   );
 }
