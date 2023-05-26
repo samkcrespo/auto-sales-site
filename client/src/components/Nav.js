@@ -175,7 +175,7 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     </ThemeProvider>
-    <div class="red-line" style={{width: '900px', paddingLeft: '500px'}}></div>
+    <div class="red-line" style={{width: '90%', paddingLeft: '700px'}}></div>
     </Box>
   );
 }

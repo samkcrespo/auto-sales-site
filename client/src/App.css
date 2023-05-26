@@ -45,6 +45,9 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 code {
 font-family: roboto;
 }
+.red-font {
+  color: red;
+}
 
 
 /* NAV */
@@ -61,6 +64,25 @@ font-family: roboto;
   color: rgba(255, 255, 255, 0.75);
 }
 
+
+/* 
+ABOUT US PAGE */
+
+.about-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.about-paragraph {
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+}
+
+.about-images {
+  text-align: center;
+}
 /* FOOTER */
 
 .footer{
