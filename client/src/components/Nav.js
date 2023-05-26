@@ -34,7 +34,9 @@ function ResponsiveAppBar() {
     textDecoration: "none",
     color: "white",
     fontSize: "18px",
-    fontFamily: 'archivo'
+    fontFamily: 'archivo',
+    paddingBottom: "50px",
+    paddingRight: "50px"
   
   };
 
@@ -102,7 +104,7 @@ function ResponsiveAppBar() {
                   <NavLink to="/products" style={{
           textDecoration: 'none'
         }}>
-                 <Typography textAlign="center">Vehicles</Typography>
+                 <Typography textAlign="center">Inventory</Typography>
                  </NavLink>
                </MenuItem>
                <MenuItem key="" onClick={handleCloseNavMenu}>
@@ -145,7 +147,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
                  <MenuItem key="" onClick={handleCloseNavMenu}>
                   <NavLink style={linkStyles} to="/products"  >
-                 VEHICLES
+                 INVENTORY
                  </NavLink>
                </MenuItem>
                <MenuItem key="" onClick={handleCloseNavMenu}>
@@ -166,9 +168,8 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     </ThemeProvider>
-    <div class="about-container">
-    <div ></div>
-    <div class="red-line" style={{width: '90%', paddingLeft: '700px'}}></div>
+    <div class="navbar-line-container">
+    <div class="red-line" style={{width: '70%'}}></div>
     </div>
     </Box>
   );

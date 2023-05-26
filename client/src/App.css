@@ -54,7 +54,13 @@ font-family: roboto;
 .red-line {
   border-bottom: 1px solid red;
   border-width: 3px;
+
 }
+.navbar-line-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* HOME PAGE */
 
 .home-header {
@@ -69,6 +75,9 @@ font-family: roboto;
 /* 
 ABOUT US PAGE */
 
+.about-header {
+  padding-top: 30px;
+}
 .about-container {
   display: flex;
   /* align-items: center; */
@@ -77,12 +86,14 @@ ABOUT US PAGE */
 
 .about-paragraph {
   text-align: center;
-  width: 60%;
-  padding: 20px;
+  width: 45%;
+  padding-right: 50px;
+  padding-top: 30px;
 }
 
 .about-images {
   text-align: center;
+  padding-top: 30px;
 }
 /* FOOTER */
 

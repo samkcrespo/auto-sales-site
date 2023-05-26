@@ -7,7 +7,7 @@ import japaneseretailers from "../images/jcologos.png";
 function Home() {
   return (
     <div >
-    <div class="home-header"><h3 class="transparent-text">Your Home for Genuine Japanese Cars</h3>
+    <div class="home-header"><h2 class="transparent-text">Your Home for Genuine Japanese Cars</h2>
     <div><img src ={japaneseretailers} alt="Japanese Auto Retailers"/></div>
     <div></div>
    <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%', height: '90%', position: 'absolute', top: 0, left: 0, zIndex: -1  }} />

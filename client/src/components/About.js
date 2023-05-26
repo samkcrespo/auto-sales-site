@@ -4,7 +4,7 @@ import AdrianCollage from '../images/adrian_collage.png';
 function About() {
   return (
     <div>
-      <div><h3>In memory of <strong className="red-font">Adrian Zambrana</strong></h3>
+      <div><h3 class="about-header">In memory of <strong className="red-font">Adrian Zambrana</strong></h3>
       <h4>03/31/1993 - 12/23/2022</h4></div>
       <div class="about-container" >
       <div class="about-paragraph">
