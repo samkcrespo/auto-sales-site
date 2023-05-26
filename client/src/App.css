@@ -59,6 +59,7 @@ font-family: roboto;
 
 .home-header {
   font-weight: 500;
+  padding: 12px;
 }
 .transparent-text {
   color: rgba(255, 255, 255, 0.75);

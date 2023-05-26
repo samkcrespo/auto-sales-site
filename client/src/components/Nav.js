@@ -33,8 +33,7 @@ function ResponsiveAppBar() {
   const linkStyles = {
     textDecoration: "none",
     color: "white",
-    fontSize: "40px",
-    fontWeight: "800px"
+    fontSize: "18px"
   
   };
 
@@ -140,31 +139,23 @@ function ResponsiveAppBar() {
             
           
           <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/" style={linkStyles} activeStyle={{
-          background: "red",
-        }}>
-                  <Typography textAlign="center">Home</Typography>
+                  <NavLink to="/"  style={linkStyles}>
+                  HOME
                   </NavLink>
                 </MenuItem>
                  <MenuItem key="" onClick={handleCloseNavMenu}>
-                  <NavLink to="/products" style={linkStyles} activeStyle={{
-          background: "red",
-        }}>
-                 <Typography textAlign="center">Vehicles</Typography>
+                  <NavLink style={linkStyles} to="/products"  >
+                 VEHICLES
                  </NavLink>
                </MenuItem>
                <MenuItem key="" onClick={handleCloseNavMenu}>
-                <NavLink to="/about" style={linkStyles} activeStyle={{
-          background: "red",
-        }}>
-                <Typography textAlign="center">About Us</Typography>
+                <NavLink style={linkStyles}  to="/about" >
+               ABOUT US
                 </NavLink>
                 </MenuItem>
              <MenuItem key="" onClick={handleCloseNavMenu}>
-                <NavLink to="/contact" style={linkStyles} activeStyle={{
-          background: "red",
-        }}>
-               <Typography textAlign="center">Contact Us</Typography>
+                <NavLink to="/contact" style={linkStyles}>
+               CONTACT US
                </NavLink>
              </MenuItem>
        
