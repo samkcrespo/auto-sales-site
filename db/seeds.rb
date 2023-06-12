@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'aws-sdk-s3'
 car2 = Product.create!(title: "1991 Honda Beat", description: "Up for sale is a rare 1991 Honda Beat, imported straight from Japan!
 - Right-hand drive 
 - Convertible soft top
@@ -21,4 +23,5 @@ car2 = Product.create!(title: "1991 Honda Beat", description: "Up for sale is a 
 Come check out this unique car and take it for a spin!
 Located in Krum, Texas. (near Dallas)
 ",
-make: "Honda", model: "Beat", price: 9000.00, year: 1991, mileage: 69000, imageurl: "https://tse2.mm.bing.net/th?id=OIP.4SZGlvluaNORwK3NOu20rwHaE6&pid=Api&P=0" )
+make: "Honda", model: "Beat", price: 9000, year: 1991, mileage: 69000, imageurl: "https://tse2.mm.bing.net/th?id=OIP.4SZGlvluaNORwK3NOu20rwHaE6&pid=Api&P=0" )
+

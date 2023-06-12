@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     
+    
     def index
         render json: User.all
     end
@@ -22,13 +23,10 @@ class UsersController < ApplicationController
     end
 
     def show 
-        userevents = user.find_by(id: session[:user_id])
-        # userevents = user.find(params[:id])
-        render json: userevents, serializer: userWithEventsSerializer
     end
 
     private 
     def user_params
-        params.permit(:first_name, :last_name, :email, :password, :username, :password_confirmation)
+        params.permit(:first_name, :last_name, :email, :password, :username, :isAdmin, :password_confirmation)
     end
 end
