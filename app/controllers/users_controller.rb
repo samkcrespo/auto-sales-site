@@ -5,15 +5,19 @@ class UsersController < ApplicationController
         render json: User.all
     end
 
+    def show
+        current_user = User.find(session[:current_user])
+        render json: current_user
+    end
+
     def create
         user = User.create(user_params)
         if user.valid?
          session[:user_id] = user.id
         render json: user, status: :created
-       else
+        else
         render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
-        
-       end
+        end
     end
 
     def update
@@ -22,8 +26,6 @@ class UsersController < ApplicationController
         render json: user
     end
 
-    def show 
-    end
 
     private 
     def user_params

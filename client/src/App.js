@@ -15,6 +15,34 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
   const appliedTheme = createTheme(theme);
   const [products, setProducts] = useState([]);
+  const [user, setUser] = useState(null);
+
+  // useEffect(() => {
+  //   // auto-login
+  //   handleCheckUser();
+  // }, []);
+
+  // function handleCheckUser() {
+  //   fetch("/me").then((response) => {
+  //     if (response.ok) {
+  //       response.json().then((user) => {
+  //         setUser(user);
+  //       });
+  //     } else {
+  //       response.json().then((err) => console.log(err));
+  //     }
+  //   });
+  //   setSessionCheck(true);
+  // }
+
+  // function handleLogout() {
+  //   fetch("/logout", { method: "DELETE" }).then((res) => {
+  //     if (res.ok) {
+  //       setUser(null);
+  //     }
+  //     navigate("/");
+  //   });
+  // }
   
 
   // const URL = ('http://localhost:4000/products')
@@ -42,6 +70,18 @@ function App() {
             <Route path="/about" element={<About/>} />
             <Route path="/products" element={<ProductsContainer products={products}/>} />
             <Route path="/contact" element={<ContactForm/>} />
+            {/* <Route
+              path="signup"
+              element={
+                <Signup onLogin={setUser} onLogout={handleLogout} user={user} />
+              }
+            />
+            <Route
+              path="login"
+              element={
+                <Login onLogin={setUser} onLogout={handleLogout} user={user} />
+              }
+            /> */}
            
      
       </Routes>

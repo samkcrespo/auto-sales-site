@@ -12,6 +12,7 @@ function Home() {
     <div></div>
    <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%', height: '90%', position: 'absolute', top: 0, left: 0, zIndex: -1  }} />
       </div>
+      <img src=""/> 
         {/* <div style={{ position: 'relative', zIndex: 4 }}>   
         <Slideshow />
         </div> */}
