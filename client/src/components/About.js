@@ -5,10 +5,10 @@ function About() {
   return (
     <div style={{ padding: '2em', lineHeight: '1.6' }}>
       <div style={{ textAlign: 'center', marginBottom: '2em' }}>
-        <h3 className="about-header" style={{ color: '#ddd', marginBottom: '0.5em' }}>
+        <h3 className="about-header" id="archivo"  style={{ color: '#ddd', marginBottom: '0.5em' }}>
           In memory of <strong className="red-font">Adrian Zambrana</strong>
         </h3>
-        <h4 style={{ color: '#ddd' }}>03/31/1993 - 12/23/2022</h4>
+        <h4 id="archivo" style={{ color: '#ddd' }}>03/31/1993 - 12/23/2022</h4>
       </div>
       <div className="about-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div className="about-paragraph" style={{ flex: '0.6', marginRight: '2em' }}>

@@ -5,7 +5,7 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <div className="footer">
+    <div className="footer" id="archivo" > 
       <p> JDM Import House | Copyright © {year}</p>
     </div>
   )

@@ -1,9 +1,12 @@
 .App {
   text-align: center;
   color: white;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
+#archivo {
+  font-family: 'Archivo', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -94,6 +97,15 @@ ABOUT US PAGE */
 .about-images {
   text-align: center;
   padding-top: 30px;
+}
+
+
+/* CONTACT US PAGE */
+
+.im-details {
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 /* FOOTER */
 
