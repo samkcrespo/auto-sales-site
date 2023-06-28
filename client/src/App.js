@@ -6,6 +6,8 @@ import Nav from './components/Nav'
 import Home from './components/Home';
 import Footer from './components/Footer';
 import About from './components/About';
+import Signup from './components/Signup';
+import Login from './components/Login';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import theme from "./theme";
 import ProductsContainer from './components/ProductsContainer';

@@ -5,9 +5,9 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-  <div className="footer">
-    <p> JDM Import House | Copyright © {year}</p>
-  </div>
+    <div className="footer">
+      <p> JDM Import House | Copyright © {year}</p>
+    </div>
   )
 }
 

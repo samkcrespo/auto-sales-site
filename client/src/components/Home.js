@@ -6,19 +6,38 @@ import japaneseretailers from "../images/jcologos.png";
 
 function Home() {
   return (
-    <div >
-    <div class="home-header"><h2 class="transparent-text">Your Home for Genuine Japanese Cars</h2>
-    <div><img src ={japaneseretailers} alt="Japanese Auto Retailers"/></div>
-    <div></div>
-   <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%', height: '90%', position: 'absolute', top: 0, left: 0, zIndex: -1  }} />
+    <div>
+      <div className="home-header">
+        <h2 className="transparent-text">Your Home for Genuine Japanese Cars</h2>
+        <img src={japaneseretailers} alt="Japanese Auto Retailers"/>
+        <img src={transparentcars} alt="JDM Import House Garage" style={{ width: '100%', height: '90%', position: 'absolute', top: 0, left: 0, zIndex: -1  }} />
       </div>
-      <img src=""/> 
-        {/* <div style={{ position: 'relative', zIndex: 4 }}>   
-        <Slideshow />
-        </div> */}
-    </div>
 
-    
+      
+      
+      {/* Brief Introduction */}
+      <div className="transparent-text" style={{ marginTop: '50px' }}>
+        <p>From the heart of Japan to your driveway, we bring you the finest selection of top-quality, meticulously curated Japanese vehicles.</p>
+          <p>At JDM Import House, we share your passion for precision, performance, and the unique appeal that Japanese cars offer.</p> 
+          <p>Continue your journey into the world of Japanese automobiles with us.</p>
+      </div>
+      
+      
+      <div className="cta" style={{ marginTop: '20px' }}>
+        <button style={{ 
+            background: 'linear-gradient(to right, #c92222, #333030)', 
+            color: '#fff', 
+            border: 'none', 
+            borderRadius: '4px', 
+            padding: '10px 20px', 
+            fontSize: '16px', 
+            cursor: 'pointer' 
+          }}>
+          Explore our Inventory
+        </button>
+      </div>
+      
+    </div>
   )
 }
 
