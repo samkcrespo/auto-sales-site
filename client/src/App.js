@@ -77,13 +77,13 @@ function App() {
               element={
                 <Signup onLogin={setUser} onLogout={handleLogout} user={user} />
               }
-            />
+            /> */}
             <Route
               path="login"
               element={
-                <Login onLogin={setUser} onLogout={handleLogout} user={user} />
+                <Login />
               }
-            /> */}
+            />
            
      
       </Routes>
