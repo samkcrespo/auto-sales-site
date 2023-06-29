@@ -37,6 +37,8 @@ function ResponsiveAppBar() {
     fontFamily: 'archivo',
     paddingBottom: "50px",
     paddingRight: "50px"
+    
+    
   
   };
 
