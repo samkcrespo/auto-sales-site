@@ -17,25 +17,41 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
   const appliedTheme = createTheme(theme);
   const [products, setProducts] = useState([]);
+  const [sessionCheck, setSessionCheck] = useState(false);
   const [user, setUser] = useState(null);
 
-  // useEffect(() => {
-  //   // auto-login
-  //   handleCheckUser();
-  // }, []);
+  useEffect(() => {
+    // auto-login
+    handleCheckUser();
+    console.log(user)
+  }, []);
 
-  // function handleCheckUser() {
-  //   fetch("/me").then((response) => {
-  //     if (response.ok) {
-  //       response.json().then((user) => {
-  //         setUser(user);
-  //       });
-  //     } else {
-  //       response.json().then((err) => console.log(err));
-  //     }
-  //   });
-  //   setSessionCheck(true);
-  // }
+  function handleCheckUser() {
+    fetch("http://localhost:4000/me", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        // include authentication header here if necessary
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          response.json().then((user) => {
+            if (user) {
+              setUser(user);
+            }
+          });
+        } else {
+          response.text().then((text) => {
+            console.log(text.length ? JSON.parse(text) : {});
+          });
+        }
+      })
+      .finally(() => {
+        setSessionCheck(true);
+      });
+  }
+  
 
   // function handleLogout() {
   //   fetch("/logout", { method: "DELETE" }).then((res) => {
@@ -47,13 +63,13 @@ function App() {
   // }
   
 
-  // const URL = ('http://localhost:4000/products')
-  // useEffect(() => { 
-  //     fetch(URL)
-  //     .then(r => r.json())
-  //     .then(products => setProducts(products))         
-  // }, []);
-  // console.log(products)
+  const URL = ('http://localhost:4000/products')
+  useEffect(() => { 
+      fetch(URL)
+      .then(r => r.json())
+      .then(products => setProducts(products))         
+  }, []);
+  console.log(products)
 
   return (
     <div className="App">
@@ -81,7 +97,7 @@ function App() {
             <Route
               path="login"
               element={
-                <Login />
+                <Login setUser={setUser} />
               }
             />
            

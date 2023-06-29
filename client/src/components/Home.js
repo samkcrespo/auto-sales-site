@@ -1,10 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import jdmLogo from '../images/JdmLogoWhite.png';
 import Slideshow from './Slideshow';
 import transparentcars from "../images/transparentcars.png";
 import japaneseretailers from "../images/jcologos.png";
 
 function Home() {
+
+  const navigate = useNavigate(); // Use useNavigate
+
+  const goToProductsPage = () => {
+    navigate('/products'); // Navigate to /products page
+  };
   return (
     <div>
       <div className="home-header">
@@ -24,14 +31,16 @@ function Home() {
       
       
       <div className="cta" id="archivo"  style={{ marginTop: '20px' }}>
-        <button style={{ 
+        <button 
+          onClick={goToProductsPage} 
+          style={{ 
             background: 'linear-gradient(to right, #c92222, #333030)', 
             color: '#fff', 
             border: 'none', 
             borderRadius: '4px', 
             padding: '10px 20px', 
             fontSize: '16px', 
-            cursor: 'pointer' 
+            cursor: 'pointer'
           }}>
           Explore our Inventory
         </button>

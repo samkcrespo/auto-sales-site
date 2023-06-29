@@ -25,3 +25,4 @@ Located in Krum, Texas. (near Dallas)
 ",
 make: "Honda", model: "Beat", price: 9000, year: 1991, mileage: 69000, imageurl: "https://tse2.mm.bing.net/th?id=OIP.4SZGlvluaNORwK3NOu20rwHaE6&pid=Api&P=0" )
 
+testUser = User.create!(first_name: 'Testcase', last_name: 'User', username: 'testuser', email: 'test@test.com', password: 'tester', isAdmin: true)

@@ -12,6 +12,7 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
+require_relative '../app/middleware/log_headers'
 # require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
@@ -31,6 +32,12 @@ module ReactRailsApiProjectTemplate
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+
+
+      # check header size
+      config.autoload_paths << "#{config.root}/app/middleware"
+
+    config.middleware.insert_after ActionDispatch::Static, LogHeaders
 
     # Configuration for the application, engines, and railties goes here.
     #
