@@ -102,13 +102,13 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">Home</Typography>
                   </NavLink>
                 </MenuItem>
-                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                 {/* <MenuItem key="" onClick={handleCloseNavMenu}>
                   <NavLink to="/products" style={{
           textDecoration: 'none'
         }}>
                  <Typography textAlign="center">Inventory</Typography>
                  </NavLink>
-               </MenuItem>
+               </MenuItem> */}
                <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink to="/about" style={{ textDecoration: 'none'  }}>
                 <Typography textAlign="center">About Us</Typography>
@@ -147,14 +147,14 @@ function ResponsiveAppBar() {
                   HOME
                   </NavLink>
                 </MenuItem>
-                 <MenuItem key="" onClick={handleCloseNavMenu}>
+                 {/* <MenuItem key="" onClick={handleCloseNavMenu}>
                   <NavLink style={linkStyles} to="/products"  >
                  INVENTORY
                  </NavLink>
-               </MenuItem>
+               </MenuItem> */}
                <MenuItem key="" onClick={handleCloseNavMenu}>
                 <NavLink style={linkStyles}  to="/about" >
-               ABOUT US
+               ABOUT
                 </NavLink>
                 </MenuItem>
              <MenuItem key="" onClick={handleCloseNavMenu}>

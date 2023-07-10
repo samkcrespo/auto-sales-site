@@ -31,7 +31,7 @@ function Home() {
       
       
       <div className="cta" id="archivo"  style={{ marginTop: '20px' }}>
-        <button 
+        {/* <button 
           onClick={goToProductsPage} 
           style={{ 
             background: 'linear-gradient(to right, #c92222, #333030)', 
@@ -43,7 +43,7 @@ function Home() {
             cursor: 'pointer'
           }}>
           Explore our Inventory
-        </button>
+        </button> */}
       </div>
       
     </div>

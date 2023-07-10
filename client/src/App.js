@@ -86,7 +86,7 @@ function App() {
               }
             />
             <Route path="/about" element={<About/>} />
-            <Route path="/products" element={<ProductsContainer products={products}/>} />
+            {/* <Route path="/products" element={<ProductsContainer products={products}/>} /> */}
             <Route path="/contact" element={<ContactForm/>} />
             {/* <Route
               path="signup"

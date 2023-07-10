@@ -11,10 +11,10 @@ export default function ProductCard({product}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        component="img"
-        alt={product.title}
-        height="140"
-        image={product.imageurl}
+        // component="img"
+        // alt={product.title}
+        // height="140"
+        // image={product.imageurl}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

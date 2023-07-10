@@ -35,9 +35,9 @@ const ContactForm = () => {
             860-556-3401
           </div>
           <div>
-            <iframe src="https://storage.googleapis.com/maps-solutions-y4s6bik4ct/locator-plus/7nli/locator-plus.html"
+            {/* <iframe src="https://storage.googleapis.com/maps-solutions-y4s6bik4ct/locator-plus/7nli/locator-plus.html"
               style={{width: "100%", height: '380px', loading: "lazy"}}>
-            </iframe>  
+            </iframe>   */}
           </div>
         </div>
         <div className="contact-form" id="archivo" style={{flex: 0.45, backgroundColor: "rgba(40, 40, 40, 0.7)", padding: "15px", borderRadius: "10px",minHeight:"200px", maxHeight: "auto"}}>
@@ -53,7 +53,7 @@ const ContactForm = () => {
               <input className="form-control" style={{backgroundColor: "rgba(60, 60, 60, 0.7)", borderColor: "rgba(60, 60, 60, 0.7)", color: "rgba(150, 150, 150, 1)"}} type="phone" id="phone" placeholder="Your Phone Number" />
             </div>
             <div className="mb-3">
-              <textarea className="form-control" style={{backgroundColor: "rgba(60, 60, 60, 0.7)", borderColor: "rgba(60, 60, 60, 0.7)", color: "rgba(150, 150, 150, 1)"}} id="message" placeholder="Your Message" required />
+              <textarea className="form-control" style={{backgroundColor: "rgba(60, 60, 60, 0.7)", borderColor: "rgba(60, 60, 60, 0.7)", color: "rgba(150, 150, 150, 1)", rows: "10", cols:"50"}} id="message" placeholder="Your Message" required />
             </div>
             <button className="btn btn-danger" type="submit">
               {formStatus}
