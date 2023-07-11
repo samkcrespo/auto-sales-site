@@ -29,8 +29,6 @@ class ContactsController < ApplicationController
         Message: #{contact.message}
       CONTENT
   
-      # Send the email
-      # Replace 'your-email@example.com' with the actual recipient email address
       ActionMailer::Base.mail(to: 'jdmimporthouse@gmail.com', subject: 'New Contact Form Submission', body: email_content).deliver_now
     end
   end
