@@ -12,7 +12,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import theme from "./theme";
 import ProductsContainer from './components/ProductsContainer';
 import { Route, Routes } from "react-router-dom";
-import ContactForm from './components/ContactForm';
+import Contact from './components/Contact';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
   const appliedTheme = createTheme(theme);
@@ -87,7 +87,7 @@ function App() {
             />
             <Route path="/about" element={<About/>} />
             {/* <Route path="/products" element={<ProductsContainer products={products}/>} /> */}
-            <Route path="/contact" element={<ContactForm/>} />
+            <Route path="/contact" element={<Contact/>} />
             {/* <Route
               path="signup"
               element={

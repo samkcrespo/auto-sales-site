@@ -1,4 +1,5 @@
 require "active_support/core_ext/integer/time"
+require 'dotenv/load'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -34,6 +35,20 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
+
+  # mailer
+
+  config.action_mailer.smtp_settings = {
+    address: ENV['EMAIL_SERVICE_PROVIDER'],
+    port: 587,
+    domain: ENV['EMAIL_DOMAIN'],
+    user_name: ENV['EMAIL_USERNAME'],
+    password: ENV['EMAIL_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+  
+
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
