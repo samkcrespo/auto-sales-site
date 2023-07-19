@@ -2,8 +2,9 @@
   "name": "autosales-clientsite",
   "description": "Build scripts for Heroku",
   "engines": {
-    "node": "16.x"
-  },
+    "node": "18.x"
+}
+,
   "scripts": {
     "build": "npm install --prefix client && npm run build --prefix client",
     "clean": "rm -rf public",
