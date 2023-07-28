@@ -10,35 +10,8 @@ function Slideshow() {
       {
       title: "Honda",
       image: "https://bringatrailer.com/wp-content/uploads/2017/07/t.jpg"
-      },
-      {
-      title: "Miata",
-      image: "https://tse4.mm.bing.net/th?id=OIP.5qQkq1B2vyYI8JRkq31qUQHaEK&pid=Api&P=0"
-      },
-      {
-        title: "Honda",
-        image: "https://bringatrailer.com/wp-content/uploads/2017/07/t.jpg"
-        },
-        {
-        title: "Miata",
-        image: "https://tse4.mm.bing.net/th?id=OIP.5qQkq1B2vyYI8JRkq31qUQHaEK&pid=Api&P=0"
-        },
-        {
-          title: "Honda",
-          image: "https://bringatrailer.com/wp-content/uploads/2017/07/t.jpg"
-          },
-          {
-          title: "Miata",
-          image: "https://tse4.mm.bing.net/th?id=OIP.5qQkq1B2vyYI8JRkq31qUQHaEK&pid=Api&P=0"
-          },
-          {
-            title: "Honda",
-            image: "https://bringatrailer.com/wp-content/uploads/2017/07/t.jpg"
-            },
-            {
-            title: "Miata",
-            image: "https://tse4.mm.bing.net/th?id=OIP.5qQkq1B2vyYI8JRkq31qUQHaEK&pid=Api&P=0"
-            },
+      }
+        
     ]
 
     const productImages = products.map(product => {
